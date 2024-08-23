@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Iconos de Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Hoja CSS Interna-->
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <!-- Titulo - Favicon -->
+    <title>Diego Velasquez | Desarrollo Web Front-End</title>
+    <link rel="icon" type="image/x-icon" href="./Assets/img/code-slash.svg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Offside&family=Rubik+Dirt&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="./Assets/img/code-slash.svg" width="50" alt="Logo de la página web">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#yo">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experiencia">Experiencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contactame</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </header>
+  <main>
+    <!-- Seccion YO -->
+    <section id="yo" class="yo align-items-stretch">
+      <div class="yo-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="yo-imagen-desarrollador" src="./Assets/img/diego.png" alt="Foto de Diego Velasquez">
+        <h1>!> Hola, soy Diego Velásquez >!</h1>
+        <h2>/* Desarrollo sitios web y realizo mapas geográficos personalizados */</h2>
+      </div>
+      <div class="yo-inferior">
+        <img class="yo-inferior-imagen img-fluid" src="./Assets/img/hero-inferior.svg" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+      </div>
+    </section>
+
+    <!-- Seccion Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Conóceme</h2>
+        <p class="seccion-texto">Soy un desarrollador web y especialista en Web Mapping y Sistemas de Información Geográfica (SIG) con experiencia en la creación de aplicaciones web interactivas y mapas dinámicos. Utilizo tecnologías como HTML, CSS y JavaScript para diseñar y desarrollar soluciones innovadoras que mejoran la visualización y el análisis de datos espaciales. Mi objetivo es combinar la funcionalidad y el diseño para ofrecer experiencias de usuario excepcionales.</p>
+      </div>
+    </section>
+
+    <!-- Seccion Experiencia -->
+    <section id="experiencia" class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row" >
+          <!-- Desarrollo Web -->
+          <div class="columna col-12 col-md-4" onmouseover="background_row(this)">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Desarrollo Web</p>
+            <p>Tengo experiencia en desarrollo web, utilizando las tecnologías fundamentales de HTML, CSS y JavaScript para crear sitios web dinámicos y atractivos. A lo largo de mi carrera, he trabajado en diversos proyectos que incluyen diseño y maquetación, interactividad, optimización de sitios web, entre otros. Mi enfoque siempre ha sido crear soluciones web que no solo sean visualmente atractivas, sino también funcionales y eficientes.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+              <span class="badge text-bg-primary">React</span>
+            </div>
+          </div>
+          <!-- Web Mapping -->
+          <div class="columna col-12 col-md-4" onmouseover="background_row(this)">
+            <i class="bi bi-geo-alt-fill"></i>
+            <p class="experiencia-titulo">Web Maping</p>
+            <p>He desarrollado a lo largo de mi carrera soluciones web mapping utilizando tecnologías avanzadas como Leaflet, OpenLayers y GeoServer. Con Leaflet y OpenLayers he desarrollado mapas interactivos y responsivos, integrando datos geoespaciales para una visualización intuitiva y eficiente. Con Geoserver he configurado y administrado servidores de mapas para la publicación y gestión de datos geoespaciales, facilitando el acceso y la interoperabilidad de la información</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">OpenLayers</span>
+              <span class="badge text-bg-primary">GeoServer</span>
+              <span class="badge text-bg-primary">Leaflet</span>
+            </div>
+          </div>
+          <!-- Herramientas SIG -->
+          <div class="columna col-12 col-md-4" onmouseover="background_row(this)">
+            <i class="bi bi-layers"></i>
+            <p class="experiencia-titulo">Herramientas SIG</p>
+            <p>Tengo una sólida experiencia en el uso de ArcGIS Pro y QGIS para el desarrollo y análisis de proyectos de Sistemas de Información Geográfica (SIG). A lo largo de mi carrera, he trabajado en diversos proyectos que me permiten ofrecer soluciones precisas y eficientes para la visualización y análisis de datos geoespaciales, adaptándome a las necesidades específicas de cada proyecto.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Arcgis Pro</span>
+              <span class="badge text-bg-primary">Qgis</span>
+              <span class="badge text-bg-primary">ENVI</span>
+            </div>
+          </div>
+        </div> 
+      </div> 
+    </section>
+
+    <!-- Seccion Proyectos -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Proyectos Realizados</h2>
+      <h3 class="seccion-descripcion">Estos son algunos proyectos que he realizado...</h3>
+      <!-- Galeria de Proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="./Assets/img/Proyecto1.jpg" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Web Travel Tour</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="./Assets/img/proyecto2.png" alt="Proyecto 2">
+              <div class="overlay">
+                <p>ABS Tecnology</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="./Assets/img/proyecto3.png" alt="Proyecto 3">
+              <div class="overlay">
+                <p>Studio Arquitectura</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="./Assets/img/Mapa1.png" alt="Proyecto 4">
+              <div class="overlay">
+                <p>Mapa Paisajes Gastronómicos</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://www.google.com/maps/d/viewer?mid=1I3hxUVjC1Edexff9QNTuK30-Q5fAb4n2&hl=es-419&femb=1&ll=-39.972497110204316%2C-72.62969744505462&z=9" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="./Assets/img/mapa2.png" alt="Proyecto 5">
+              <div class="overlay">
+                <p>Mapa ¿Dónde tengo que votar?</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://www.google.com/maps/d/viewer?hl=es-419&mid=1VgbmWm_v8x7Cvkj0FagYlQqqFNjiQbwO&ll=-36.65368985235828%2C-74.15172682304156&z=4" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 6 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="./Assets/img/mapa3.png" alt="Proyecto 6">
+              <div class="overlay">
+                <p>Mapa Polo Turismo Creativo Los Ríos</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://www.google.com/maps/d/viewer?hl=es-419&mid=1baXRy-SEbt84I5N45ZhCxLoEpTySgkg&ll=-39.93085294831109%2C-72.61380156411056&z=9" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-primary">
+          Ver más proyectos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!-- Seccion Contacto -->
+     <section id="contacto">
+      <article class="container">
+        <h2 id="titulo_form" class="seccion-titulo texto-negro text-center">Contáctame</h2>
+        <div class="row justify-content-center align-items-center">
+          <div class="contacto-caja col-12 col-md-6">
+            <p class="seccion-contacto" >¿Quieres iniciar un proyecto? No dudes en contactarme para informarte mejor.</p>
+          </div>
+          <form id="formValidacion" class="row contacto-caja col-12 col-md-6 g-3" method="get">
+            <div class="col-md-6">
+              <label class="label-formulario" for="input-name" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="input-name" placeholder="Ingresa tu Nombre" required>
+            </div>
+            <div class="col-md-6">
+              <label class="label-formulario" for="input-secname" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="input-secname" placeholder="Ingresa tu apellido" required>
+            </div>
+            <div class="col-12">
+              <label class="label-formulario" for="floatingInput">Correo Electrónico</label>
+              <input type="email" class="form-control" id="floatingInput" placeholder="nombre@email.com" required>
+            </div>
+            <div class="col-12">
+              <label class="label-formulario" for="telefono">Teléfono</label>
+              <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu telefono" required>
+            </div>
+            <div>
+            <p class="label-formulario">¿Qué servicios te interesan?</p>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Seleccione una opción</option>
+              <option value="1">Consultoría SIG</option>
+              <option value="2">Diseño Web</option>
+              <option value="3">Web Mapping</option>
+            </select>
+            </div>
+            <div class="form-floating">
+              <p class="label-formulario" >¿Qué buscas?, descríbemelo</p>
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            </div>
+            <div>
+              <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+      </div>
+      </article>
+     </section>
+  </main>
+  <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+    <img class="footer-logo" src="./Assets/img/braces-asterisk.svg" alt="Logo del portafolio">
+    <p class="footer-texto text-center"><br>Creemos un proyecto juntos.</p>
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+      <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="mailto:diego@micorreo.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope"></i>
+      </a>
+    </div>
+    <div class="derechos-de-autor">Creado por Diego Velásquez (2024) &#169;</div>
+  </footer>
+    <!--JS Interno-->
+    <script src="./Assets/js/script.js"></script>
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
